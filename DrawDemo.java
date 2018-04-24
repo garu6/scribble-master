@@ -100,13 +100,13 @@ public class DrawDemo
     }
     
     
-    public void drawPentagon(int xPos, int yPos){
+    public void drawPentagon(){
         
-        Pen pen = new Pen(xPos, yPos, myCanvas);
+        Pen pen = new Pen(150,100 , myCanvas);
         pen.setColor(Color.GREEN);
-        for (int i =0; i <3; i++){
-        pen.move(200);
-        pen.turn(120);
+        for (int i =0; i <5; i++){
+        pen.move(100);
+        pen.turn(360/5);
     }
        
     }
