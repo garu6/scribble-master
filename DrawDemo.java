@@ -112,14 +112,29 @@ public class DrawDemo
     }
     
     public void drawPolygon(int n){
-        
+        if (n >2){
         Pen pen = new Pen(200,100 , myCanvas);
         pen.setColor(Color.GREEN);
         for (int i =0; i <n; i++){
         pen.move(100);
         pen.turn(360/n);
     }
-       
+}else {
+        System.out.println("un poligono no puede tener menos de 3 lados");
     
+}
+    
+}
+
+
+ public void drawSpiral(){
+        
+        Pen pen = new Pen(250,200,myCanvas);
+        pen.setColor(Color.black);
+        for (int i =2; i <50; i++){
+        pen.move(i * 4);
+        pen.turn(90);
+    }
+
 }
 }
